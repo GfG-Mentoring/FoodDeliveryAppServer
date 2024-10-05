@@ -1,8 +1,6 @@
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-dotenv.config(
-  '/home/shikhar/Documents/gfg/mongodb-express-rest-api-example/server/.env'
-);
+dotenv.config();
 
 export function InitializeDB() {
   return mongoose.connect(process.env.ATLAS_URI, {
